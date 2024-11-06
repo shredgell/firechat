@@ -11,12 +11,16 @@
 	}
 </script>
 
+<Navbar />
+
 {#if $user !== null}
 	<div class="flex h-full flex-col">
-		<Navbar />
 		<slot />
 	</div>
 {:else}
 	<!-- Optional: Add a loading indicator -->
-	<p>Loading...</p>
+	<div class="flex justify-center items-center h-full w-full">
+		<span class="loading loading-spinner loading-lg"></span>
+	</div>
 {/if}
+
