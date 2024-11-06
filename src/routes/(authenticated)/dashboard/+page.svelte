@@ -17,6 +17,6 @@
 		<p>
 			Welcome to your Dashboard, {$user?.displayName || 'User'}!
 		</p>
-		<button on:click={logout} class="btn">Logout</button>
+		<a href="/" on:click={logout} class="btn">Logout</a>
 	</div>
 </div>

@@ -68,7 +68,7 @@
 						<button
 							aria-label="Delete Message"
 							on:click={() => deleteMessage(message.id)}
-							class="text-sm text-red-500 hover:text-red-700"
+							class="text-sm opacity-50 hover:text-error hover:opacity-100"
 						>
 							<svg
 								class="h-6 w-6"
