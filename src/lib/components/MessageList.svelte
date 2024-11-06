@@ -35,15 +35,15 @@
 	});
 </script>
 
-<div bind:this={messageContainer} class="h-full overflow-y-scroll px-4 pt-4">
+<div bind:this={messageContainer} class="flex justify-center h-full overflow-y-scroll px-4 pt-4 ">
 	{#each messages as message}
-		<div class="mb-4 flex items-start">
+		<div class="mb-4 flex items-start w-full max-w-3xl">
 			{#if message.user.photoURL}
 				<img src={message.user.photoURL} alt="Avatar" class="mr-2 h-8 w-8 rounded-full" />
 			{:else}
 				<div class="mr-2 h-8 w-8 rounded-full bg-gray-300"></div>
 			{/if}
-			<div>
+			<div class="w-full">
 				<div class="text-sm">{message.user.displayName}</div>
 				<div class="text-sm">{message.text}</div>
 			</div>

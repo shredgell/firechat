@@ -26,12 +26,12 @@
 	};
 </script>
 
-<div class="px-4 pb-4">
+<div class="flex justify-center px-4 pb-4">
 	<input
 		type="text"
 		bind:value={messageText}
 		placeholder="Type a message..."
-		class="input input-bordered w-full"
+		class="input input-bordered w-full max-w-3xl"
 		on:keydown={(e) => e.key === 'Enter' && sendMessage()}
 	/>
 </div>

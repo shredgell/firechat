@@ -13,8 +13,10 @@
 
 <Navbar />
 
+
+
 {#if $user !== null}
-	<div class="flex h-full flex-col">
+	<div class="flex h-full flex-col sm:pt-16">
 		<slot />
 	</div>
 {:else}
