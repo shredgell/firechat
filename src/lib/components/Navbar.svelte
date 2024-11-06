@@ -3,7 +3,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<nav class="fixed w-full items-center justify-center p-4">
+<nav class="z-100 fixed top-0 w-full items-center justify-center p-4">
 	<div class="flex justify-center gap-2">
 		<a
 			href="/chat"

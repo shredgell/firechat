@@ -9,6 +9,5 @@
 	<meta name="description" content="Chat with other users" />
 </svelte:head>
 
-
 <MessageList />
 <MessageInput />
