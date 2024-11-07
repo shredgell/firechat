@@ -5,18 +5,18 @@
 </script>
 
 <div class="flex h-full items-center justify-center p-4 text-center">
-	<div class="space-y-2">
+	<div class="prose">
 		{#if $user?.photoURL}
-			<img src={$user.photoURL} alt="User Profile" class="mx-auto mb-4 h-16 w-16 rounded-full" />
+			<img src={$user.photoURL} alt="User Profile" class="mx-auto mb-4 h-20 w-20 rounded-full" />
 		{:else}
 			<!-- Optional: Display a placeholder image or icon -->
-			<div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gray-300">
+			<div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-gray-300">
 				<span class="text-3xl text-gray-600">?</span>
 			</div>
 		{/if}
-		<p>
+		<h1>
 			Welcome to your Dashboard, {$user?.displayName || 'User'}!
-		</p>
-		<a href="/" on:click={logout} class="btn">Logout</a>
+		</h1>
+		<a href="/" on:click={logout} class="not-prose btn">Logout</a>
 	</div>
 </div>
