@@ -12,7 +12,7 @@
 		{#await goto('/chat')}{/await}
 	{/if}
 {:else}
-	<div class="flex h-screen flex-col items-center justify-center p-4 text-center">
+	<div class="flex h-full flex-col items-center justify-center p-4 text-center">
 		<div class="prose lg:prose-xl">
 			<label class="swap swap-flip mb-4 text-6xl">
 				<!-- this hidden checkbox controls the state -->

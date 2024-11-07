@@ -21,7 +21,7 @@
 
 <!-- Optional: Add a loading indicator while waiting for authentication -->
 {#if !authInitialized}
-	<div class="flex h-screen items-center justify-center">
+	<div class="flex h-full items-center justify-center">
 		<span class="loading loading-spinner loading-lg"></span>
 	</div>
 {/if}
